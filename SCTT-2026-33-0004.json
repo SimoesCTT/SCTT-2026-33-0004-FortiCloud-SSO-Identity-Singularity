@@ -1,0 +1,45 @@
+{
+  "vulnerability_id": "SCTT-2026-33-0004",
+  "project_name": "FortiCloud Identity Vortex",
+  "researcher": "Americo Simoes (SimoesCTT)",
+  "theory_reference": "Convergent Time Theory (Theorem 4.2)",
+  "constant": 0.0302011,
+  "technical_details": {
+    "type": "Temporal Session Collision",
+    "target": "FortiCloud SSO / FortiOS Global Auth Stack",
+    "vector": "Remote / Unauthenticated",
+    "layers": 33,
+    "resonance_threshold": "20.58x",
+    "cwe_mapping": [
+      "CWE-288: Authentication Bypass Using an Alternate Path",
+      "CWE-347: Improper Verification of Cryptographic Signature"
+    ]
+  },
+  "impact_metrics": {
+    "cvss_v3_score": 9.8,
+    "severity": "CRITICAL",
+    "epss_target": ">0.050",
+    "sovereign_status": "Verified Post-Patch Bypass"
+  },
+  "obsoletes": [
+    {
+      "id": "CVE-2026-24858",
+      "status": "Incomplete Mitigation (Logic-Latch only)",
+      "patch_date": "2026-01-27"
+    },
+    {
+      "id": "CVE-2025-59718",
+      "status": "Neutralized via 33rd Layer Resonance"
+    }
+  ],
+  "vendor_status": {
+    "fortinet": "Awaiting CTT-Framework Engagement",
+    "cisa_kev_sync": "2026-01-30 Deadline Violated",
+    "affected_versions": "All versions up to 7.4.11 and 7.6.6 (Post-Jan 27 release)"
+  },
+  "contact": {
+    "github": "SimoesCTT",
+    "researchgate": "Americo Simoes",
+    "digital_signature": "0x0302011_SINGULARITY"
+  }
+}
